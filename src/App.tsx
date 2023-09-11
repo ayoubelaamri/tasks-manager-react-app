@@ -12,6 +12,8 @@ const Dashboard = React.lazy(() => import("./modules/admin/Dashboard"));
 const TasksList = React.lazy(() => import("./modules/admin/TasksList"));
 const TeamMembers = React.lazy(() => import("./modules/admin/TeamMembers"));
 const Settings = React.lazy(() => import("./modules/admin/Settings"));
+const NotFound = React.lazy(() => import("./components/NotFound"));
+
 
 
 const router = createBrowserRouter([
@@ -51,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/admin/settings',
-        element: <Settings />
+        element: <NotFound />
       }
     ]
   },

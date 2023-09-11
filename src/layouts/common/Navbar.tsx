@@ -18,7 +18,7 @@ export default function Navbar() {
           <i className="fa fa-search text-neutral -ml-7"></i>
         </div>
       </div>
-      <div className="w-[400px] flex items-center justify-between px-6">
+      <div className="w-[460px] flex items-center justify-between px-6">
         <AccountMenu />
         <NotificationsMenu />
       </div>

@@ -1,9 +1,12 @@
 import React, { Suspense } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Footer from './common/Footer'
 import Navbar from './common/Navbar'
 import Sidebar from './common/Sidebar'
 import Loading from '../components/Loading'
+import Calendar from '../components/Calendar'
+import { Divider } from '@mui/material'
+import Options from './common/Options'
 
 export default function AdminLayout() {
   return (
@@ -12,13 +15,13 @@ export default function AdminLayout() {
       <div className="flex flex-col w-full h-full">
         <Navbar />
         <div className="flex w-full h-full">
-          <div className="flex flex-col h-full w-full p-6">
+          <div className="flex flex-col h-[calc(100vh-8em)] w-full p-6 overflow-y-auto">
             <Suspense fallback={<Loading />}>
               <Outlet />
             </Suspense>
           </div>
-          <div className="lex flex-col items-center justify-between h-full w-[400px] shadow-sm">
-
+          <div className="w-[400px]">
+            <Options />
           </div>
         </div>
         <Footer />
