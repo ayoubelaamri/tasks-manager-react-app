@@ -19,16 +19,16 @@ module.exports = {
     colors: {
       ...colors,
       primary: {
-        ...colors.orange,
-        DEFAULT: '#ff8d59'
+        ...colors.purple,
+        DEFAULT: '#9942e3'
       },
       primary1: {
-        ...colors.orange,
-        DEFAULT: '#ff6f68',
+        ...colors.purple,
+        DEFAULT: '#741dba',
       },
       primary2: {
-        ...colors.orange,
-        DEFAULT: '#ffa34f',
+        ...colors.purple,
+        DEFAULT: '#ae5cec',
       },
       secondary3: {
         ...colors.stone,

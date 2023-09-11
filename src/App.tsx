@@ -1,28 +1,23 @@
+
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Button } from '@mui/material';
-import LandingLayout from './layouts/LandingLayout';
+import { Navigate, RouterProvider, createBrowserRouter, redirect } from 'react-router-dom';
+
 import AuthLayout from './layouts/AuthLayout';
 import AdminLayout from './layouts/AdminLayout';
 
-import Home from './modules/landing/Home';
-import SignIn from './modules/auth/SignIn';
-import SignUp from './modules/auth/SignUp';
-import Dashboard from './modules/admin/Dashboard';
+const SignIn = React.lazy(() => import("./modules/auth/SignIn"));
+const SignUp = React.lazy(() => import("./modules/auth/SignUp"));
+const Dashboard = React.lazy(() => import("./modules/admin/Dashboard"));
+const TasksList = React.lazy(() => import("./modules/admin/TasksList"));
+const TeamMembers = React.lazy(() => import("./modules/admin/TeamMembers"));
+const Settings = React.lazy(() => import("./modules/admin/Settings"));
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingLayout />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      }
-    ]
+    element: <Navigate to="/auth/sign-in" />,
   },
   {
     path: "auth",
@@ -45,6 +40,18 @@ const router = createBrowserRouter([
       {
         path: '/admin',
         element: <Dashboard />
+      },
+      {
+        path: '/admin/tasks-list',
+        element: <TasksList />
+      },
+      {
+        path: '/admin/team-members',
+        element: <TeamMembers />
+      },
+      {
+        path: '/admin/settings',
+        element: <Settings />
       }
     ]
   },
@@ -56,8 +63,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="h-screen w-screen grid place-items-center bg-gray-200 p-6">
+    <div className="h-screen w-screen grid place-items-center bg-gray-200 p-6 bg-[url('assets/images/bg1.jpg')] bg-cover text-neutral font-roboto">
+      <div className="bg-white/50 backdrop-blur-lg w-full h-full rounded-xl shadow-xl border border-gray-300">
         <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
