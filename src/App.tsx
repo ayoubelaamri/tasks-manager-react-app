@@ -45,8 +45,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/admin/tasks-list',
-        element: <TasksList />
+        element: <TasksList />,
+        children: [
+          {
+            path: '/admin/tasks-list/:selected_id',
+            element: null
+          },
+        ]
       },
+
       {
         path: '/admin/team-members',
         element: <TeamMembers />

@@ -2,6 +2,7 @@ import IUser from "./IUser";
 
 export default interface ITask {
     id: string,
-    description: string,
-    assignedUser?: IUser,
+    mission: string,
+    user_id?: string,
+    status: string
 }

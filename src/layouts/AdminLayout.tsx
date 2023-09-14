@@ -7,25 +7,28 @@ import Loading from '../components/Loading'
 import Calendar from '../components/Calendar'
 import { Divider } from '@mui/material'
 import Options from './common/Options'
+import { AppProvider } from '../context/AppContext'
 
 export default function AdminLayout() {
   return (
-    <div className="flex w-full h-full gap-0.5">
-      <Sidebar />
-      <div className="flex flex-col w-full h-full">
-        <Navbar />
-        <div className="flex w-full h-full">
-          <div className="flex flex-col h-[calc(100vh-8em)] w-full p-6 overflow-y-auto">
-            <Suspense fallback={<Loading />}>
-              <Outlet />
-            </Suspense>
+    <AppProvider>
+      <div className="flex w-full h-full gap-0.5">
+        <Sidebar />
+        <div className="flex flex-col w-full h-full">
+          <Navbar />
+          <div className="flex w-full h-full">
+            <div className="flex flex-col h-[calc(100vh-8em)] w-full p-6 overflow-y-auto">
+              <Suspense fallback={<Loading />}>
+                <Outlet />
+              </Suspense>
+            </div>
+            <div className="w-[400px]">
+              <Options />
+            </div>
           </div>
-          <div className="w-[400px]">
-            <Options />
-          </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
-    </div>
+    </AppProvider>
   )
 }

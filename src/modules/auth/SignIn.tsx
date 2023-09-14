@@ -19,9 +19,9 @@ export default function SignIn() {
           <label htmlFor="" className="text-neutral2 text-xs font-semibold">Remember me</label>
         </div>
       </div>
-      <Link to='/admin' className='flex items-center gap-2 px-6 py-1.5 rounded-full bg-white/30 hover:bg-white/40 mx-auto'>
+      <Link to='/admin' className='flex items-center gap-2 px-6 py-1.5 rounded-full bg-white/30 hover:bg-white/40 mx-auto font-semibold text-sm'>
         <i className="fa fa-sign-in"></i>
-        LOGIN
+        <span className="">LOGIN</span>
       </Link>
     </div>
   )

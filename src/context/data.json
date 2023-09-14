@@ -1,0 +1,189 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Reparex",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": ["1","2","3","4"],
+      "image": "react.png"
+    },
+    {
+      "id": "2",
+      "name": "Fournex",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": ["4","5","6","8"],
+      "image": "angular.png"
+    },
+    {
+      "id": "3",
+      "name": "Assistex",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": ["6"],
+      "image": "angular.png"
+    },
+    {
+      "id": "4",
+      "name": "Brikz",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": ["7","2"],
+      "image": "python.png"
+    },
+    {
+      "id": "5",
+      "name": "Linkex",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": ["9","10","1"],
+      "image": "react.png"
+    },
+    {
+      "id": "6",
+      "name": "Managex",
+      "description": "Create a web app to predict stock markets",
+      "tasks_ids": [],
+      "image": "angular.png"
+    }
+  ],
+
+  "tasks": [
+    {
+      "id": "1",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "1",
+      "status": "completed"
+    },
+    {
+      "id": "2",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "2",
+      "status": "inprogress"
+    },
+    {
+      "id": "3",
+      "mission": "Update system style to follow the new template.",
+      "status": "unassigned"
+    },
+    {
+      "id": "4",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "4",
+      "status": "assigned"
+    },
+    {
+      "id": "5",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "5",
+      "status": "assigned"
+    },
+    {
+      "id": "6",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "6",
+      "status": "inprogress"
+    },
+    {
+      "id": "7",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "7",
+      "status": "inprogress"
+    },
+    {
+      "id": "8",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "8",
+      "status": "assigned"
+    },
+    {
+      "id": "9",
+      "mission": "Update system style to follow the new template.",
+      "status": "unassigned"
+    },
+    {
+      "id": "10",
+      "mission": "Update system style to follow the new template.",
+      "user_id": "9",
+      "status": "assigned"
+    }
+  ],
+
+  "users": [
+    {
+      "id": "1",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "2.jpg",
+      "active": true
+    },
+    {
+      "id": "3",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "3.jpg",
+      "active": true
+    },
+    {
+      "id": "4",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "4.jpg",
+      "active": true
+    },
+    {
+      "id": "5",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "8.jpg",
+      "active": true
+    },
+    {
+      "id": "6",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "6.jpg",
+      "active": true
+    },
+    {
+      "id": "7",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "7.jpg",
+      "active": true
+    },
+    {
+      "id": "8",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "8.jpg",
+      "active": true
+    },
+    {
+      "id": "9",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "9.jpg",
+      "active": true
+    },
+    {
+      "id": "10",
+      "name": "Anthony Michel",
+      "email": "anthonymichel@gmail.com",
+      "role": "Project Manager",
+      "avatar": "10.jpg",
+      "active": true
+    }
+  ]
+}
